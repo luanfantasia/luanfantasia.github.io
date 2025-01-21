@@ -1,0 +1,66 @@
+#box-project {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  padding: 4px 4px 4px 10px;
+  gap: 40px;
+}
+
+#box-project .box-project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 400px;
+  transition: transform 0.2s ease;
+}
+
+#box-project .box-project-content:hover {
+  transform: scale(1.02);
+}
+
+#box-project .box-project-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 260px;
+}
+
+#box-project .box-project-img img {
+  width: inherit;
+  height: inherit;
+}
+
+#box-project .box-project-text {
+  color: #000000;
+  font-weight: bold;
+  text-align: justify;
+}
+
+#box-project .box-project-text h1 {
+  font-family: "Adult Swim", sans-serif;
+  font-size: 26px;
+  margin: 20px 0px 10px 0px;
+}
+
+#box-project .box-project-text h3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  #box-project {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #box-project {
+    grid-template-columns: 1fr;
+  }
+}

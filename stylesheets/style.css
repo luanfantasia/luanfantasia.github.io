@@ -240,7 +240,7 @@ footer {
 
   .titlename {
     display: none;
-    justify-content: start;
+    width: 40px;
     font-size: 28px;
     padding: 0px 20px;
   }
