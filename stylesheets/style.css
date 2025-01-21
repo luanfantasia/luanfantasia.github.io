@@ -8,6 +8,11 @@
   src: url("/fonts/Helvetica Neue/HelveticaNeue-Light.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Jubilat";
+  src: url("/fonts/Jubilat/Jubilat-Regular.otf") format("opentype");
+}
+
 * {
   color: #ffffff;
 }
@@ -19,10 +24,27 @@ body {
 header {
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
+  position: relative;
+  overflow: hidden;
   background-color: #ffffff;
-  border-bottom: 6px #000000;
+  border-bottom: 100px solid #000000;
+}
+
+header * {
+  position: relative;
+  z-index: 2;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #171717;
+  z-index: 1;
+  transition: none;
 }
 
 header img {
@@ -46,7 +68,7 @@ header nav a {
 header nav a:hover {
   font-family: "Adult Swim", sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #171717;
 }
 
@@ -55,32 +77,37 @@ a {
 }
 
 section {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  margin: 10px 10px 0px 10px;
+  padding: 40px;
   background-color: #ffffff;
 }
 
 section h1,
 section h3 {
   font-weight: bold;
-  text-align: start;
   color: #000000;
+  margin-left: 10px;
 }
 
 section h1 {
-  font-family: "Adult Swim", sans-serif;
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-family: "Jubilat", sans-serif;
+  font-size: 48px;
+  margin-bottom: 40px;
 }
 
 section h3 {
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 18px;
+  font-size: 28px;
 }
 
 footer {
   font-family: "Helvetica Neue", sans-serif;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   background-color: #000000;
 }
 
@@ -104,9 +131,11 @@ footer {
   justify-content: center;
   font-family: "Adult Swim", sans-serif;
   font-size: 20px;
+  white-space: nowrap;
   background-color: #171717;
   width: 140px;
   height: 60px;
+  padding: 0px 4px;
 }
 
 .titlename:hover {
@@ -114,13 +143,109 @@ footer {
   background-color: #ffffff;
 }
 
-.about-me,
-.skills,
-.projects,
-.contacts {
-  margin-top: 10px;
+.about-me {
+  flex-direction: row;
+}
+
+.about-me-img {
+  width: 40%;
+  max-width: 40%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.about-me-img:hover {
+  transform: scale(1.06);
+}
+
+.about-me-img img {
+  width: 100%;
+  max-width: 100%;
+  height: inherit;
+  box-shadow: 6px 6px 0 #000000;
+  border: 2px solid #000000;
 }
 
 .about-me-text {
-  width: 46%;
+  margin-left: 40px;
+  width: 60%;
+}
+
+#titlesmall {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  header::before {
+    animation: emptyBar 0.4s forwards;
+  }
+
+  header nav a {
+    animation: emptyBarColor 0.4s forwards;
+  }
+
+  @keyframes emptyBar {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+  @keyframes emptyBarColor {
+    0% {
+      color: #ffffff;
+    }
+    100% {
+      color: #000000;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header::before {
+    animation: fillBar 0.4s forwards;
+  }
+
+  @keyframes fillBar {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  nav {
+    display: none;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+  }
+
+  .about-me-img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-me-text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .titlename {
+    display: none;
+    justify-content: start;
+    font-size: 28px;
+    padding: 0px 20px;
+  }
+
+  #titlesmall {
+    display: inline-flex;
+  }
 }
