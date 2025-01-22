@@ -1,7 +1,7 @@
 #box-skill {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-content: space-between;
+  justify-content: center;
   overflow: auto;
   width: 100%;
   height: auto;
@@ -65,14 +65,25 @@
   margin: 10px 0px;
 }
 
-@media (max-width: 768px) {
-  #box-skill {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 480px) {
   #box-skill {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 14px;
+    gap: 40px;
+  }
+
+  #box-skill .box-skill-content {
+    width: 100%;
+    max-width: 120px;
+    margin: 0 auto;
+  }
+
+  #box-skill .box-skill-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #box-skill .box-skill-name h1 {
+    font-size: 12px;
   }
 }
