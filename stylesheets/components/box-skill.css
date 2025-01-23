@@ -1,43 +1,39 @@
-#box-skill {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-content: center;
+.box-skill {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   overflow: auto;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  padding-top: 10px;
-  padding-left: 10px;
-  gap: 10px;
+  padding: 16px;
+  margin-bottom: 40px;
+  gap: 100px;
 }
 
-#box-skill .box-skill-content {
+.box-skill .box-skill-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   width: 200px;
-  margin-bottom: 40px;
+  height: fit-content;
   background-color: #ffffff;
   box-shadow: 6px 6px 0 #000000;
   border: 2px solid #000000;
   transition: transform 0.2s ease;
 }
 
-#box-skill .box-skill-content:hover {
+.box-skill .box-skill-content:hover {
   background-color: #a07bb6;
   transform: scale(1.08);
 
   .box-skill-name {
+    color: #000000;
     background-color: #ffffff;
-
-    h1 {
-      color: #000000;
-    }
   }
 }
 
-#box-skill .box-skill-img {
+.box-skill .box-skill-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,44 +42,37 @@
   padding: 6px 0px;
 }
 
-#box-skill .box-skill-img img {
+.box-skill .box-skill-img img {
   width: 80%;
   height: 80%;
 }
 
-#box-skill .box-skill-name {
-  width: inherit;
-  height: inherit;
-  background-color: #171717;
-}
-
-#box-skill .box-skill-name h1 {
+.box-skill .box-skill-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: #ffffff;
-  margin: 10px 0px;
+  background-color: #171717;
+  width: inherit;
+  height: 28px;
+  margin: 0 auto;
 }
 
-@media (max-width: 480px) {
-  #box-skill {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 14px;
-    gap: 40px;
-  }
-
-  #box-skill .box-skill-content {
+@media (max-width: 768px) {
+  .box-skill .box-skill-content {
     width: 100%;
-    max-width: 120px;
-    margin: 0 auto;
+    max-width: fit-content;
   }
 
-  #box-skill .box-skill-img {
+  .box-skill .box-skill-img {
     width: 100px;
     height: 100px;
   }
 
-  #box-skill .box-skill-name h1 {
+  .box-skill .box-skill-name {
     font-size: 12px;
   }
 }

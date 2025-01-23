@@ -1,0 +1,18 @@
+.logo-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Adult Swim", sans-serif;
+  font-size: 20px;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #171717;
+  width: 140px;
+  height: 60px;
+  padding: 0px 4px;
+}
+
+.logo-title:hover {
+  color: #171717;
+  background-color: #ffffff;
+}

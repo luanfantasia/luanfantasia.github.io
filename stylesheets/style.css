@@ -13,51 +13,13 @@
   src: url("/fonts/Jubilat/Jubilat-Regular.otf") format("opentype");
 }
 
-* {
-  color: #ffffff;
-}
-
 body {
   background-color: #000000;
 }
 
 a {
   display: inline-flex;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: start;
-  margin: 10px 10px 0px 10px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-
-section h1,
-section h3 {
-  font-weight: bold;
-  color: #000000;
-  margin-left: 10px;
-}
-
-section h1 {
-  font-family: "Jubilat", sans-serif;
-  font-size: 48px;
-  margin-bottom: 28px;
-}
-
-section h3 {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 28px;
-}
-
-footer {
-  font-family: "Helvetica Neue", sans-serif;
-  text-align: center;
-  font-size: 14px;
-  background-color: #000000;
+  text-decoration: none;
 }
 
 .unselectable {
@@ -72,104 +34,4 @@ footer {
 ::selection {
   color: #ffffff;
   background: #171717;
-}
-
-.titlename {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Adult Swim", sans-serif;
-  font-size: 20px;
-  white-space: nowrap;
-  background-color: #171717;
-  width: 140px;
-  height: 60px;
-  padding: 0px 4px;
-}
-
-.titlename:hover {
-  color: #171717;
-  background-color: #ffffff;
-}
-
-.about-me {
-  flex-direction: row;
-}
-
-.about-me-img {
-  width: 40%;
-  max-width: 40%;
-  height: auto;
-  transition: transform 0.2s ease;
-}
-
-.about-me-img:hover {
-  transform: scale(1.06);
-}
-
-.about-me-img img {
-  width: 100%;
-  max-width: 100%;
-  height: inherit;
-  box-shadow: 6px 6px 0 #000000;
-  border: 2px solid #000000;
-}
-
-.about-me-text {
-  margin-left: 40px;
-  width: 60%;
-}
-
-.skills-class,
-.projects-class,
-.contacts-class {
-  display: flex;
-  align-items: start;
-}
-
-#titlesmall {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .about-me,
-  .skills-class,
-  .projects-class,
-  .contacts-class {
-    align-items: center;
-  }
-
-  .about-me {
-    flex-direction: column;
-  }
-
-  .about-me-img {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .about-me-text {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  .about-me h3 {
-    font-size: 22px;
-  }
-
-  /*
-  .titlename {
-    display: none;
-    width: 40px;
-    font-size: 28px;
-    padding: 0px 20px;
-  }
-
-  #titlesmall {
-    display: inline-flex;
-  }
-  */
 }

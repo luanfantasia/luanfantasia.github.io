@@ -24,22 +24,25 @@
     />
     <link href="./stylesheets/reset.css" rel="stylesheet" />
     <link href="./stylesheets/style.css" rel="stylesheet" />
-    <link href="./stylesheets/components/header.css" rel="stylesheet" />
+    <link href="./stylesheets/components/main-header.css" rel="stylesheet" />
+    <link href="./stylesheets/components/logo-title.css" rel="stylesheet" />
+    <link href="./stylesheets/components/box-section.css" rel="stylesheet" />
+    <link href="./stylesheets/components/about-me.css" rel="stylesheet" />
     <link href="./stylesheets/components/box-skill.css" rel="stylesheet" />
     <link href="./stylesheets/components/box-project.css" rel="stylesheet" />
+    <link href="./stylesheets/components/main-footer.css" rel="stylesheet" />
     <title>Luan Fantasia's Portfolio</title>
   </head>
-
   <body>
-    <header>
+    <header class="main-header">
       <a href="https://github.com/luanfantasia" target="_blank">
         <img
           src="https://avatars.githubusercontent.com/u/195589782"
           alt="Profile GitHub"
+          class="profile-pic"
       /></a>
-      <!--<div id="titlesmall" class="titlename unselectable">[lf]</div>-->
-      <div class="titlename unselectable">[luan fantasia]</div>
-      <nav class="unselectable">
+      <div class="logo-title unselectable">[luan fantasia]</div>
+      <nav class="navigation unselectable">
         <a href="#aboutme">ABOUT ME</a>
         <a href="#skills">SKILLS</a>
         <a href="#projects">PROJECTS</a>
@@ -47,203 +50,201 @@
       </nav>
     </header>
     <main>
-      <section id="aboutme" class="about-me">
-        <div class="about-me-img">
-          <img src="/assets/img/placeholder-img.png" alt="image" />
-        </div>
+      <section id="aboutme" class="box-section about-me">
+        <img
+          src="/assets/img/placeholder-img.png"
+          alt="image"
+          class="about-me-img"
+        />
         <div class="about-me-text">
           <h1>ABOUT ME</h1>
-          <h3>
+          <p>
             Systems Analysis and Development student at Universidade Paulista
             (UNIP). I have work experience with Power Platform, JavaScript, and
             React, and I am currently focused on specializing as a Front-End
             developer. I am committed to continuous growth, embracing challenges
             that broaden my expertise, and finding ways to apply my knowledge to
             create practical and impactful solutions in the technology field.
-          </h3>
+          </p>
         </div>
       </section>
-      <section id="skills" class="skills-class">
+      <section id="skills" class="box-section">
         <h1>SKILLS</h1>
-        <div id="box-skill" class="unselectable">
+        <div class="box-skill unselectable">
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/html5-plain.png"
                 alt="HTML5 Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>HTML5</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">HTML5</h2>
           </div>
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/css3-plain.png"
                 alt="CSS3 Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>CSS3</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">CSS3</h2>
           </div>
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/javascript-plain.png"
                 alt="JavaScript Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>JavaScript</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">JavaScript</h2>
           </div>
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/typescript-plain.png"
                 alt="TypeScript Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>TypeScript</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">TypeScript</h2>
           </div>
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/csharp-plain.png"
                 alt="CSharp Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>C#</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">C#</h2>
           </div>
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/nodejs-plain.png"
                 alt="NodeJS Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>NodeJS</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">NodeJS</h2>
           </div>
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/mysql-original.png"
                 alt="MySQL Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>MySQL</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">MySQL</h2>
           </div>
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/azure-plain.png"
                 alt="Azure Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>Azure</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">Azure</h2>
           </div>
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/vscode-plain.png"
                 alt="VSCode Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>VSCode</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">VSCode</h2>
           </div>
           <div class="box-skill-content">
-            <div class="box-skill-img">
+            <figure class="box-skill-img">
               <img
                 src="/assets/img/skills-icons/figma-plain.png"
                 alt="Figma Icon"
               />
-            </div>
-            <div class="box-skill-name">
-              <h1>Figma</h1>
-            </div>
+            </figure>
+            <h2 class="box-skill-name">Figma</h2>
           </div>
         </div>
       </section>
-      <section id="projects" class="projects-class">
+      <section id="projects" class="box-section">
         <h1>PROJECTS</h1>
-        <div id="box-project">
-          <div class="box-project-content">
-            <div class="box-project-img">
-              <img src="/assets/img/placeholder-img.png" alt="teste" />
+        <div class="box-project">
+          <a href="" target="_blank">
+            <div class="box-project-content">
+              <img
+                src="/assets/img/placeholder-img.png"
+                alt="teste"
+                class="box-project-img"
+              />
+              <div class="box-project-text">
+                <h2>Projeto 1</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Vitae rerum ipsam sed, cum delectus eligendi, doloremque iure
+                  veritatis consectetur velit ullam voluptate, vero unde dolor
+                  maiores hic laboriosam facere mollitia.
+                </p>
+              </div>
             </div>
-            <div class="box-project-text">
-              <h1>Projeto 1</h1>
-              <h3>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
-                rerum ipsam sed, cum delectus eligendi, doloremque iure
-                veritatis consectetur velit ullam voluptate, vero unde dolor
-                maiores hic laboriosam facere mollitia.
-              </h3>
+          </a>
+          <a href="" target="_blank">
+            <div class="box-project-content">
+              <img
+                src="/assets/img/placeholder-img.png"
+                alt="teste"
+                class="box-project-img"
+              />
+              <div class="box-project-text">
+                <h2>Projeto 2</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Vitae rerum ipsam sed, cum delectus eligendi, doloremque iure
+                  veritatis consectetur velit ullam voluptate, vero unde dolor
+                  maiores hic laboriosam facere mollitia.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="box-project-content">
-            <div class="box-project-img">
-              <img src="/assets/img/placeholder-img.png" alt="teste" />
+          </a>
+          <a href="" target="_blank">
+            <div class="box-project-content">
+              <img
+                src="/assets/img/placeholder-img.png"
+                alt="teste"
+                class="box-project-img"
+              />
+              <div class="box-project-text">
+                <h2>Projeto 3</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Vitae rerum ipsam sed, cum delectus eligendi, doloremque iure
+                  veritatis consectetur velit ullam voluptate, vero unde dolor
+                  maiores hic laboriosam facere mollitia.
+                </p>
+              </div>
             </div>
-            <div class="box-project-text">
-              <h1>Projeto 2</h1>
-              <h3>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
-                rerum ipsam sed, cum delectus eligendi, doloremque iure
-                veritatis consectetur velit ullam voluptate, vero unde dolor
-                maiores hic laboriosam facere mollitia.
-              </h3>
+          </a>
+          <a href="" target="_blank">
+            <div class="box-project-content">
+              <img
+                src="/assets/img/placeholder-img.png"
+                alt="teste"
+                class="box-project-img"
+              />
+              <div class="box-project-text">
+                <h2>Projeto 4</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Vitae rerum ipsam sed, cum delectus eligendi, doloremque iure
+                  veritatis consectetur velit ullam voluptate, vero unde dolor
+                  maiores hic laboriosam facere mollitia.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="box-project-content">
-            <div class="box-project-img">
-              <img src="/assets/img/placeholder-img.png" alt="teste" />
-            </div>
-            <div class="box-project-text">
-              <h1>Projeto 3</h1>
-              <h3>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
-                rerum ipsam sed, cum delectus eligendi, doloremque iure
-                veritatis consectetur velit ullam voluptate, vero unde dolor
-                maiores hic laboriosam facere mollitia.
-              </h3>
-            </div>
-          </div>
-          <div class="box-project-content">
-            <div class="box-project-img">
-              <img src="/assets/img/placeholder-img.png" alt="teste" />
-            </div>
-            <div class="box-project-text">
-              <h1>Projeto 4</h1>
-              <h3>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
-                rerum ipsam sed, cum delectus eligendi, doloremque iure
-                veritatis consectetur velit ullam voluptate, vero unde dolor
-                maiores hic laboriosam facere mollitia.
-              </h3>
-            </div>
-          </div>
+          </a>
         </div>
       </section>
-      <section id="contacts" class="contacts-class">
+      <section id="contacts" class="box-section">
         <h1>CONTACTS</h1>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <small> © 2025 Luan Fantasia. All rights reserved.</small>
     </footer>
   </body>

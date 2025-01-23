@@ -1,28 +1,29 @@
-#box-project {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.box-project {
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   overflow: auto;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  padding: 4px 4px 4px 10px;
+  padding: 4px 10px;
+  margin-bottom: 20px;
   gap: 40px;
 }
 
-#box-project .box-project-content {
+.box-project .box-project-content {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   transition: transform 0.2s ease;
 }
 
-#box-project .box-project-content:hover {
+.box-project .box-project-content:hover {
   transform: scale(1.02);
 }
 
-#box-project .box-project-img {
+.box-project .box-project-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,58 +31,41 @@
   height: 260px;
 }
 
-#box-project .box-project-img img {
-  width: inherit;
-  height: inherit;
-}
-
-#box-project .box-project-text {
+.box-project .box-project-text {
   color: #000000;
   font-weight: bold;
   text-align: start;
 }
 
-#box-project .box-project-text h1 {
+.box-project .box-project-text h2 {
   font-family: "Adult Swim", sans-serif;
   font-size: 26px;
   margin: 20px 0px 10px 0px;
 }
 
-#box-project .box-project-text h3 {
+.box-project .box-project-text p {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 18px;
-  margin: 0px;
+  margin: 0;
 }
 
-@media (max-width: 480px) {
-  #box-project {
-    grid-template-columns: 1fr;
-    padding: 10px;
-    gap: 40px;
-  }
-
-  #box-project .box-project-content {
+@media (max-width: 768px) {
+  .box-project .box-project-content {
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: fit-content;
   }
 
-  #box-project .box-project-img {
+  .box-project .box-project-img {
     width: 100%;
     height: auto;
   }
 
-  #box-project .box-project-img img {
-    width: 100%;
-    height: auto;
-  }
-
-  #box-project .box-project-text h1 {
+  .box-project .box-project-text h2 {
     font-size: 20px;
     margin-top: 10px;
   }
 
-  #box-project .box-project-text h3 {
+  .box-project .box-project-text p {
     font-size: 16px;
   }
 }
