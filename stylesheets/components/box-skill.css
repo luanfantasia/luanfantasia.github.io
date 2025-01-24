@@ -1,13 +1,13 @@
 .box-skill {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   overflow: auto;
   max-width: 100%;
   height: auto;
   padding: 16px;
   margin-bottom: 40px;
-  gap: 100px;
+  gap: 110px;
 }
 
 .box-skill .box-skill-content {

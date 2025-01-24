@@ -1,6 +1,6 @@
 .box-project {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   overflow: auto;
   max-width: 100%;
